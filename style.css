@@ -1,37 +1,99 @@
-
+/* Configuração geral */
 body {
     background-color: #121212;
-    color: #e0e0e0;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Identificação da dupla */
+.dupla {
     font-size: 16px;
-    text-align: center;
+    color: #a0a0a0;
+    margin-bottom: 20px;
 }
 
-header {
+.dupla span {
+    color: #facc15;
+    font-weight: bold;
+}
+
+/* Container principal centralizado */
+.container {
     background-color: #1e1e1e;
-    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* Títulos */
 h1 {
-    color: #ffcc00;
-    font-size: 36px;
-    text-align: center;
+    font-size: 32px;
+    color: #facc15;
+    margin-top: 0;
 }
 
 h2 {
-    color: #ffcc00;
-    font-size: 24px;
-    text-align: left;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
-p {
-    color: #d1d1d1;
-    font-size: 18px;
-    text-align: justify;
+/* Imagem com bordas arredondadas */
+.imagem-destaque {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
 }
 
-footer {
-    background-color: #1e1e1e;
-    color: #888888;
+/* Biografia */
+.descricao {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
+
+/* Lista de links de álbuns/músicas */
+.discografia {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Estilização dos botões/links interativos */
+.card-link {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-link strong {
+    font-size: 16px;
+    color: #facc15;
+}
+
+.card-link span {
     font-size: 14px;
-    text-align: center;
+    color: #a0a0a0;
+    margin-top: 4px;
+}
+
+/* Efeito :hover nos elementos clicáveis */
+.card-link:hover {
+    background-color: #383838;
+    transform: translateY(-2px);
 }
