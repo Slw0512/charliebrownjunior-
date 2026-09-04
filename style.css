@@ -1,99 +1,114 @@
-/* Configuração geral */
+/* Configurações Globais */
 body {
-    background-color: #121212;
-    color: #f5f5f5;
+    background-color: #0d0f12; /* Cor de fundo 1 */
+    color: #e2e8f0;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-    text-align: center;
+    padding: 30px 20px;
+    text-align: center; /* Centralização geral */
 }
 
-/* Identificação da dupla */
+/* Identificação da Dupla */
 .dupla {
-    font-size: 16px;
-    color: #a0a0a0;
-    margin-bottom: 20px;
+    font-size: 15px;
+    color: #94a3b8;
+    margin-bottom: 25px; /* Espaçamento externo */
 }
 
 .dupla span {
-    color: #facc15;
+    color: #f59e0b;
     font-weight: bold;
 }
 
-/* Container principal centralizado */
-.container {
-    background-color: #1e1e1e;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+/* Cartão de Introdução (Arredondado com Padding e Margin) */
+.card-introducao {
+    background-color: #161b22; /* Cor de fundo 2 para combinar */
+    max-width: 650px;
+    margin: 0 auto 30px auto; /* Centralizado + espaçamento externo inferior */
+    padding: 35px 25px; /* Espaçamento interno */
+    border-radius: 20px; /* Cantos arredondados */
+    border: 1px solid #2d3748;
 }
 
-/* Títulos */
+/* Título */
 h1 {
-    font-size: 32px;
-    color: #facc15;
+    font-size: 34px;
+    color: #f59e0b;
     margin-top: 0;
-}
-
-h2 {
-    font-size: 20px;
-    color: #ffffff;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-/* Imagem com bordas arredondadas */
-.imagem-destaque {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 8px;
-    margin: 15px 0;
-}
-
-/* Biografia */
-.descricao {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #d1d5db;
     margin-bottom: 20px;
 }
 
-/* Lista de links de álbuns/músicas */
-.discografia {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+/* Imagem Centralizada com Bordas Arredondadas */
+.imagem-destaque {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 12px; /* Cantos arredondados */
+    margin-bottom: 20px;
 }
 
-/* Estilização dos botões/links interativos */
-.card-link {
-    background-color: #2a2a2a;
+/* Texto Informativo */
+.texto-historia {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin: 0;
+}
+
+/* Cartão da Seção de Músicas */
+.card-musicas {
+    background-color: #161b22;
+    max-width: 650px;
+    margin: 0 auto; /* Centralização */
+    padding: 30px 25px; /* Espaçamento interno */
+    border-radius: 20px; /* Cantos arredondados */
+    border: 1px solid #2d3748;
+}
+
+h2 {
+    font-size: 24px;
     color: #ffffff;
-    text-decoration: none;
-    padding: 15px;
-    border-radius: 8px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Lista de Links Clicáveis */
+.lista-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    gap: 15px;
+}
+
+/* Estilização dos Links com :hover */
+.card-link {
+    background-color: #21262d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 18px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    border: 1px solid #30363d;
+    transition: all 0.3s ease;
 }
 
 .card-link strong {
+    display: block;
     font-size: 16px;
-    color: #facc15;
+    color: #f59e0b;
 }
 
 .card-link span {
-    font-size: 14px;
-    color: #a0a0a0;
-    margin-top: 4px;
+    font-size: 13px;
+    color: #8b949e;
 }
 
-/* Efeito :hover nos elementos clicáveis */
+/* Efeito :hover */
 .card-link:hover {
-    background-color: #383838;
-    transform: translateY(-2px);
+    background-color: #2b323b;
+    border-color: #f59e0b;
+    transform: translateY(-3px); /* Elevação leve ao passar o mouse */
 }
